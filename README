@@ -1,0 +1,25 @@
+===========
+Description
+===========
+
+These are libraries to manipulate Geoserver (http://geoserver.org) files without 
+interact with GUI or rest/wms/wfs calls. 
+There are three managers:
+  - UsersManager: manipulite users.xml, so manages users and groups  
+  - RolesManager: manipulate roles.xml, so manages roles of users and groups
+  - RulesManager: manipulate layers.properties, so manages relations between workgroups/layer and users/groups
+  
+PasswordEncoder is a simple utility to generate and encoded password for Geoserver.
+
+Take a look in sample directory to see an example.
+
+=======
+Install
+=======
+
+This is a maven project so:
+
+$ mvn clean install 
+
+After that you will find egs-utils-1.0.jar in your maven directory.
+

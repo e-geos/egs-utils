@@ -1,11 +1,5 @@
 package it.egeos.geoserver.utils;
 
-import it.egeos.geoserver.utils.exceptions.BadAccessModeException;
-import it.egeos.geoserver.utils.exceptions.NoRoleException;
-import it.egeos.geoserver.utils.exceptions.RuleExistsException;
-import it.egeos.geoserver.utils.exceptions.RuleNotExistsException;
-import it.egeos.geoserver.utils.interfaces.Manager;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
@@ -24,7 +18,14 @@ import java.util.Map;
 import javax.management.relation.RoleNotFoundException;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang.StringUtils;
+
+import it.egeos.geoserver.utils.exceptions.BadAccessModeException;
+import it.egeos.geoserver.utils.exceptions.NoRoleException;
+import it.egeos.geoserver.utils.exceptions.RuleExistsException;
+import it.egeos.geoserver.utils.exceptions.RuleNotExistsException;
+import it.egeos.geoserver.utils.interfaces.Manager;
+
 
 /**
  * 
